@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <hr>
+    <hr>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="keys">
+            <button class="key" onclick="clickNumber(7)">7</button>
+            <button class="key" onclick="clickNumber(8)">8</button>
+            <button class="key" onclick="clickNumber(9)">9</button>
+            <button class="key operator" onclick="clickOperator('/')">/</button>
+            <button class="key" onclick="clickNumber(4)">4</button>
+            <button class="key" onclick="clickNumber(5)">5</button>
+            <button class="key" onclick="clickNumber(6)">6</button>
+            <button class="key operator" onclick="clickOperator('')"></button>
+            <button class="key" onclick="clickNumber(1)">1</button>
+            <button class="key" onclick="clickNumber(2)">2</button>
+            <button class="key" onclick="clickNumber(3)">3</button>
+            <button class="key operator" onclick="clickOperator('-')">-</button>
+            <button class="key" onclick="clickNumber(0)">0</button>
+            <button class="key" onclick="clickDecimal()">.</button>
+            <button class="key" onclick="clearDisplay()">C</button>
+            <button class="key operator" onclick="clickOperator('+')">+</button>
+            <button class="key equals" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
